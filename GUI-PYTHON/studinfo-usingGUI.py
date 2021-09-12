@@ -1,3 +1,5 @@
+#create student information form using TKinter
+#name,address,email,schoolname,stding in,year,dob,gender,schooltype- Marathi medium,english,convent,sem
 import tkinter as tk
 from tkinter.constants import X
 win=tk.Tk()
