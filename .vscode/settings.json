@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "textvar"
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "python.formatting.provider": "none"
+}

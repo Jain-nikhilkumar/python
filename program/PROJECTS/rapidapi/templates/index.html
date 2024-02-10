@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenGraph Metadata Viewer</title>
+</head>
+<body>
+    <h1>OpenGraph Metadata Viewer</h1>
+    
+    <!-- Form to submit a URL -->
+    <form method="POST" action="/fetch_metadata">
+        <label for="url">Enter a URL:</label>
+        <input type="url" id="url" name="url" required>
+        <button type="submit">Fetch Metadata</button>
+    </form>
+    
+    <!-- Display OpenGraph metadata -->
+    <div id="metadata">
+        <h2>Metadata:</h2>
+        <p><strong>Title:</strong> {{ title }}</p>
+        <p><strong>Description:</strong> {{ description }}</p>
+        <img src="{{ image_url }}" alt="Image">
+    </div>
+</body>
+</html>

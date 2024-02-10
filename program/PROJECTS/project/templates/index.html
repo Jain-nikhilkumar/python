@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Educational Content Generation</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Educational Content Generation</h1>
+    <form id="query-form">
+        <label for="user-query">Enter your query:</label>
+        <input type="text" id="user-query" name="user-query">
+        <button type="submit">Generate</button>
+    </form>
+    <div id="output">
+        <!-- Display the generated content here -->
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
